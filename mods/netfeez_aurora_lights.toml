@@ -1,0 +1,38 @@
+# Draft for horizon-rust/horizon-mods: copy to mods/netfeez_aurora_lights.toml in the PR.
+# Attach netfeez_aurora_lights-0.1.0.hmod and its .minisig to a release of
+# https://github.com/netfeez/aura-lights-mod and link that asset in the PR description.
+id = "netfeez_aurora_lights"
+kind = "native-mod"
+name = "Aurora Lights"
+summary = "Dynamic glow for held, dropped and framed light sources, with optional colored light."
+description = """Aurora Lights is a native Horizon mod that makes torches, lanterns, glowstone and other luminous items glow while you hold them, while they lie on the ground and while they sit in item frames. It also gives enchanted gear a faint violet halo.
+
+Everything is optional: the mod menu has switches for other players, dropped items, item frames, light colors and the enchanted glow. All of them are on by default except light colors. The hue palette is shared with Aurora Bloom, the companion shader pack that turns this colored light into a sheen on water, blocks and entities.
+
+Install only one shader pack: Aurora Bloom. Turn off Horizon Extras > Dynamic Lights, or both systems will emit duplicate lights. The mod is client-side and needs the launcher to trust its Rust source, which is compiled for the exact pinned game build.
+
+Repo: https://github.com/netfeez/aura-lights-mod
+Companion shader: https://github.com/netfeez/aura-bloom-shader"""
+authors = ["NetFeez"]
+owners = ["NetFeez"]
+owner_ids = [270459603]
+license = "Apache-2.0"
+source = "https://github.com/netfeez/aura-lights-mod"
+icon = "icons/netfeez_aurora_lights.png"
+categories = ["utility", "magic"]
+tags = ["lighting", "glow", "colored-light", "dynamic-lights", "enchanted"]
+key = "RWRttajEKBlqCX05SU8n2DNz3cTwvv8GswjqdY7J/lXCzdSRwI/6GG4d"
+
+[[versions]]
+version = "0.1.0"
+published = "2026-11-21"
+game = "26.3"
+file = "netfeez_aurora_lights-0.1.0.hmod"
+sha256 = "358ec33cda1983d9571b65090f72cf7fb6e76498c465e29d0617a8fe286fcf0c"
+signature = """
+untrusted comment: NetFeez Aurora Lights 0.1.0
+RURttajEKBlqCfIcDIXnjgG1R2PX4+UrS8wvPO6KVKEZLKjFOH/i2Wix3fR2CUBc7jm1MbA0t7LsWjGxMtuaAhbmaPkIrdf9pwo=
+trusted comment: release 0.1.0
+p2v2TKqZBflqV2SQpYjvaJauYs4voiDdXQzZjc3tGIqjD9PU4RLqZ2JNYnf1gordbe8sr3rarOA68x60HGoODg==
+"""
+changelog = "First release: dynamic glow for held, dropped and framed lights, optional colors and an enchanted halo."
