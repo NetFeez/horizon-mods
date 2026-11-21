@@ -1,5 +1,5 @@
 # Draft for horizon-rust/horizon-mods: copy to mods/netfeez_aurora_lights.toml in the PR.
-# Attach netfeez_aurora_lights-0.1.0.hmod and its .minisig to a release of
+# Attach netfeez_aurora_lights-0.1.1.hmod and its .minisig to a release of
 # https://github.com/netfeez/aura-lights-mod and link that asset in the PR description.
 id = "netfeez_aurora_lights"
 kind = "native-mod"
@@ -24,15 +24,15 @@ tags = ["lighting", "glow", "colored-light", "dynamic-lights", "enchanted"]
 key = "RWRttajEKBlqCX05SU8n2DNz3cTwvv8GswjqdY7J/lXCzdSRwI/6GG4d"
 
 [[versions]]
-version = "0.1.0"
+version = "0.1.1"
 published = "2026-11-21"
 game = "26.3"
-file = "netfeez_aurora_lights-0.1.0.hmod"
-sha256 = "358ec33cda1983d9571b65090f72cf7fb6e76498c465e29d0617a8fe286fcf0c"
+file = "netfeez_aurora_lights-0.1.1.hmod"
+sha256 = "6b199744f0827e68d2f8454bd7a9d996d2bf9226bb49dc9ae0cbbec10b4f3bae"
 signature = """
-untrusted comment: NetFeez Aurora Lights 0.1.0
-RURttajEKBlqCfIcDIXnjgG1R2PX4+UrS8wvPO6KVKEZLKjFOH/i2Wix3fR2CUBc7jm1MbA0t7LsWjGxMtuaAhbmaPkIrdf9pwo=
-trusted comment: release 0.1.0
-p2v2TKqZBflqV2SQpYjvaJauYs4voiDdXQzZjc3tGIqjD9PU4RLqZ2JNYnf1gordbe8sr3rarOA68x60HGoODg==
+untrusted comment: NetFeez Aurora Lights 0.1.1
+RURttajEKBlqCU2ZUFqaPxN0BgxvBdo1AiX6G7wg66vVZVeVhS0xHO5hr1iR12TB0EJAncjScH3UCnWVo5tHB3+lSBdD0a31/gA=
+trusted comment: release 0.1.1
+EUiGQu2uKXREVaEp5pUFBQxYksmpc68aHezM4PFnqQh0mFKOUt7CAECgKx6k2bmq9qmBtJkO3hw91xcA5L6XDQ==
 """
-changelog = "First release: dynamic glow for held, dropped and framed lights, optional colors and an enchanted halo."
+changelog = "Rebuilt for the Nov 21 Nightly (Horizon f037744). Same dynamic glow for held, dropped, framed and placed lights, optional colors and an enchanted halo; the earlier 0.1.0 build targets the Nov 20 Nightly."
