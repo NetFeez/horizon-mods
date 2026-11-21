@@ -1,0 +1,38 @@
+# Draft for horizon-rust/horizon-mods: copy to mods/aurora_bloom.toml in the PR.
+# Attach aurora_bloom-0.1.0.hshader and its .minisig to a release of
+# https://github.com/netfeez/aura-bloom-shader and link that asset in the PR description.
+id = "aurora_bloom"
+kind = "shader"
+name = "Aurora Bloom"
+summary = "Horizon shader pack (API 0.2) with an aurora sky, reflective rippling water and a gentle grade."
+description = """Aurora Bloom is a Horizon shader pack for API 0.2. It adds a deeper day sky, a violet night with twinkling stars and brighter pulsing luceros, slow aurora curtains, cooler rippling water that mirrors the world and a gentle bloom-like grade over the whole image.
+
+The first option is Presets: only lights, low, normal or enhanced. It works as a ceiling for cosmetic groups, so every effect also has its own switch, on by default, and the strength sliders stay available. Water quality (disabled to enhanced) is capped by the preset: the effective level is the lower of the two. With only lights the mirror pass is skipped.
+
+The pack reads the colored light emitted by the Aurora Lights mod for held, dropped, framed, placed and enchanted sources, and shapes it into a Fresnel-and-wave-weighted sheen on water. It is the only recommended companion shader for that mod; do not enable Horizon Extras > Dynamic Lights as well.
+
+Repo: https://github.com/netfeez/aura-bloom-shader
+Mod repo: https://github.com/netfeez/aura-lights-mod"""
+authors = ["NetFeez"]
+owners = ["NetFeez"]
+owner_ids = [270459603]
+license = "Apache-2.0"
+source = "https://github.com/netfeez/aura-bloom-shader"
+icon = "icons/aurora_bloom.png"
+categories = ["atmosphere", "reflections", "colored-lighting"]
+tags = ["shader", "sky", "water", "aurora", "bloom"]
+key = "RWRttajEKBlqCX05SU8n2DNz3cTwvv8GswjqdY7J/lXCzdSRwI/6GG4d"
+
+[[versions]]
+version = "0.1.0"
+published = "2026-11-21"
+game = "26.3"
+file = "aurora_bloom-0.1.0.hshader"
+sha256 = "cd84a07d07d7b041d2ee00b37ba31dd44b09c493d98d11a12b03be07eb4345a0"
+signature = """
+untrusted comment: NetFeez Aurora Bloom 0.1.0
+RURttajEKBlqCcI1KhW3NAdBSzbs6pnipLfTQBKt9pjHIAVUMdiJLd969wlPYGHSsDdzJNH+Z5zVKzXmGAQOOgC92uBvmfAIBAY=
+trusted comment: release 0.1.0
+f4JILh9OtyK+GKBojQxzx//7qoLUs7zApt4PNhsCDjP0L9jrWT3MtpxZ6WjtOm3ZiKjOIgmpUEtuVs6c8NnxBQ==
+"""
+changelog = "First release: presets, per-effect switches and colored-light water reflections for Aurora Lights."
