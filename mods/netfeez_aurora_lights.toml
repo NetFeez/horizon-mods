@@ -1,5 +1,5 @@
 # Draft for horizon-rust/horizon-mods: copy to mods/netfeez_aurora_lights.toml in the PR.
-# Attach netfeez_aurora_lights-0.1.2.hmod and its .minisig to a release of
+# Attach netfeez_aurora_lights-0.1.3.hmod and its .minisig to a release of
 # https://github.com/netfeez/aura-lights-mod and link that asset in the PR description.
 id = "netfeez_aurora_lights"
 kind = "native-mod"
@@ -24,15 +24,15 @@ tags = ["lighting", "glow", "colored-light", "dynamic-lights", "enchanted"]
 key = "RWRttajEKBlqCX05SU8n2DNz3cTwvv8GswjqdY7J/lXCzdSRwI/6GG4d"
 
 [[versions]]
-version = "0.1.2"
-published = "2026-11-21"
+version = "0.1.3"
+published = "2026-11-23"
 game = "26.3"
-file = "netfeez_aurora_lights-0.1.2.hmod"
-sha256 = "e6215a288ddc458e726371889f2d0931fbd4a72587b956f60271c6e616577018"
+file = "netfeez_aurora_lights-0.1.3.hmod"
+sha256 = "07350c7ff02b715bc33e224789def39ae7e42a2698446e384d854b76d42c444d"
 signature = """
-untrusted comment: NetFeez Aurora Lights 0.1.2
-RURttajEKBlqCelF9igTZ5ZrF6f97l+etKkgJM8nGwn1AJl1qNdiGICZG0ENS+eL1CdovqfnTV8w0gUjlQJ1E37RlNSSvtpfWAM=
-trusted comment: release 0.1.2
-GIobqtZO5z2okiQEn5FqqEoBhv+2p/PxzYw79E/iuZc4Oeooe8mDYo2P1cybwlF8mYVhSYBIQhFx4q5lehLOBQ==
+untrusted comment: NetFeez Aurora Lights 0.1.3
+RURttajEKBlqCUZcuR6Nnkup4ljte9GvC9T2BVRvctvqg2yOGXF16AWNGhSW45lJT4D3svA4bYveWV8RQD6O8InE49WlcHRayQA=
+trusted comment: release 0.1.3
+aYJGHVpmU35HyON1oNJSrr94KryNm8PgtLIaVjWqOkaYC/1c7tKAy2JOHisuWrEbof3VkXkVIRw+gxrAcPpTBw==
 """
-changelog = "Selects dynamic lights by camera relevance before the eight-light cap: sources behind the view or farther than 32 blocks are dropped, and nearby dropped items and frames win over distant held lights. Same Nov 21 Nightly pin (Horizon f037744) and effects as 0.1.1."
+changelog = "Balances overlapping lights so the engine's additive sum approximates the brightest source instead of doubling at the same spot. Each light keeps its colour, radius and position; the faint enchanted halo fades beside brighter frames and drops, and a weaker held light yields to a clearly brighter neighbour. Ranking by power before reach stops weak halos taking a slot at the eight-light cap. Same Nov 21 Nightly pin (Horizon f037744) as 0.1.2."
