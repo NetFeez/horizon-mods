@@ -1,5 +1,5 @@
 # Draft for horizon-rust/horizon-mods: copy to mods/netfeez_aurora_lights.toml in the PR.
-# Attach netfeez_aurora_lights-0.1.4.hmod and its .minisig to a release of
+# Attach netfeez_aurora_lights-0.1.5.hmod and its .minisig to a release of
 # https://github.com/netfeez/aura-lights-mod and link that asset in the PR description.
 id = "netfeez_aurora_lights"
 kind = "native-mod"
@@ -22,6 +22,20 @@ icon = "icons/netfeez_aurora_lights.png"
 categories = ["utility", "magic"]
 tags = ["lighting", "glow", "colored-light", "dynamic-lights", "enchanted"]
 key = "RWRttajEKBlqCX05SU8n2DNz3cTwvv8GswjqdY7J/lXCzdSRwI/6GG4d"
+
+[[versions]]
+version = "0.1.5"
+published = "2026-11-23"
+game = "26.3"
+file = "netfeez_aurora_lights-0.1.5.hmod"
+sha256 = "14376fc6f14e651bdf6a3b6f1a0d94eb4ac5255502e6722c770e85ad9f21e40b"
+signature = """
+untrusted comment: NetFeez Aurora Lights 0.1.5
+RURttajEKBlqCRDz3L9JrzXlS+RjqdaCXQN+L3GfQlb7vXpkRHyvnhb8lmX2n7NrqAXE/EN14CmtyJvxw4kO9HY5wSoo3feGTAI=
+trusted comment: release 0.1.5
+x8gac2IWi/ZP+zJQrmRAAtMgTnwRaDx9vLgBzNzLkkR7fgiihlXFrq28TSU4YaRaEtWt9K274G307SVSgLxmCg==
+"""
+changelog = "Repinned to the Nov 22 Nightly (Horizon f1bb66f3, Mixins e59da9). The SDK change is additive and no source changes were needed; behaviour is unchanged from 0.1.4."
 
 [[versions]]
 version = "0.1.4"
